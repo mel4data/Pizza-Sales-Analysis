@@ -45,8 +45,8 @@ Here are some questions that we'd like to be able to answer:
 •	What is the Daily Average Sales?
 
 •	What is the Average Customer per Day? 
-
 •	What is the Average Order Value?
+•	Monthly Sales and Order Trend
 
 ## SQL Queries
 
