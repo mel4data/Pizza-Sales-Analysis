@@ -54,5 +54,6 @@ Here are some questions that we'd like to be able to answer:
 ## Tableau Visualization
 Pizza Sales Dashboard
 
-![image](https://github.com/mel4data/Pizza-Sales-Analysis/assets/170362474/8b99d7e1-b06a-48b0-a318-becbcaa5e600)
+![image](https://github.com/mel4data/Pizza-Sales-Analysis/assets/170362474/484c1a79-13e4-4ea4-bd19-ec18574a4d22)
+
 
