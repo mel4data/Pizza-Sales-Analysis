@@ -104,7 +104,7 @@ Ans: 2
 
 11.	 Which pizzas generate the highest and lowest revenue?
 Ans.
-Highest – The Thai Chicken Pizza with $43,434 sales
+Highest – The Thai Chicken Pizza with $43,434 sales; 
 Lowest – The Brie Carre Pizza with $11,588 sales
 
 12.	Monthly Sales and Order Trend
@@ -116,5 +116,5 @@ Pizza Sales Dashboard
 
 ![image](https://github.com/mel4data/Pizza-Sales-Analysis/assets/170362474/9b249104-cb8f-47f4-a34f-acbb745355ce)
 
-## Recommendations
+## Recommendation
 
