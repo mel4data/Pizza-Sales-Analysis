@@ -38,15 +38,15 @@ The dataset contains 4 tables in CSV format
 
 Here are some questions that we'd like to be able to answer:
 
-•	What are the Total Sales, Orders and Customers?
+•	What are the total sales, total number of orders and total number of customers?
 
-•	What is the Monthly Average Sales?
+•	What is the monthly average sales?
 
-•	What is the Daily Average Sales?
+•	What is the daily average sales?
 
-•	What is the Average Customer per Day? 
+•	What is the average customer per day? 
 
-•	What is the Average Order Value?
+•	Which pizzas generate the highest and lowest revenue?
 
 •	Monthly Sales and Order Trend
 
