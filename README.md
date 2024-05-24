@@ -73,7 +73,7 @@ Ans:
 
 3.	What are our best and worst selling pizzas?
 Ans:
-Best Selling are – The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The Hawaiian Pizza
+Best Selling are – The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The Hawaiian Pizza; 
 Worst Selling is – The Brie Carre Pizza
 
 4.	What's our average order value?
@@ -86,9 +86,9 @@ The data also shows 5 days on peak hours during the busiest days (Thursdays, Fri
 
 6.	What are the total sales, total number of orders and total number of customers?
 Ans:
-Total Sales - $817,860
-Total Orders – 49, 574
-Total Customers – 21, 350
+Total Sales - $817,860; 
+Total Orders – 49, 574; 
+Total Customers – 21, 350;
 
 7.	What is the sales revenue per month?
 Ans: $68,155
@@ -116,5 +116,5 @@ Pizza Sales Dashboard
 
 ![image](https://github.com/mel4data/Pizza-Sales-Analysis/assets/170362474/9b249104-cb8f-47f4-a34f-acbb745355ce)
 
-
+## Recommendations
 
