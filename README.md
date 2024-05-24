@@ -56,7 +56,60 @@ Here are some questions that we'd like to be able to answer:
 •	Monthly Sales and Order Trend
 
 ## SQL Queries
+Refer to the code tab
 
+## Answers to the Questions
+1.	What days and times do we tend to be busiest?
+Ans: 
+Busiest Day is Friday followed by Saturday and Thursday
+Busiest Times are between 12nn to 1pm and 5pm to 6pm
+
+2.	How many pizzas are we making during peak periods?
+Ans: 
+12nn – 6776
+1pm – 6413
+5pm – 5211
+6pm – 5417
+
+3.	What are our best and worst selling pizzas?
+Ans:
+Best Selling are – The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The Hawaiian Pizza
+Worst Selling is – The Brie Carre Pizza
+
+4.	What's our average order value?
+Ans: $38.31
+
+5.	How well are we utilizing our seating capacity? (we have 15 tables and 60 seats)
+Ans:  
+Based on the hourly customer volume data and the assumption of one customer per table, seat utilization with 15 tables appears generally adequate. However, closer monitoring is recommended during peak hours between 12 PM to 1 PM and 4 PM to 7 PM, where customer traffic is high and potentially exceeds seating capacity.
+The data also shows 5 days on peak hours during the busiest days (Thursdays, Fridays, and Saturdays) where seat utilization might surpass 100%. This suggests occasional overcrowding during these peak periods.
+
+6.	What are the total sales, total number of orders and total number of customers?
+Ans:
+Total Sales - $817,860
+Total Orders – 49, 574
+Total Customers – 21, 350
+
+7.	What is the sales revenue per month?
+Ans: $68,155
+
+8.	What is the sales revenue per day?
+Ans: $2,285
+
+9.	What is the average customer per day?
+Ans: 59
+
+10.	What is the average number of pizzas per order?
+Ans: 2
+
+11.	 Which pizzas generate the highest and lowest revenue?
+Ans.
+Highest – The Thai Chicken Pizza with $43,434 sales
+Lowest – The Brie Carre Pizza with $11,588 sales
+
+12.	Monthly Sales and Order Trend
+The month with the highest revenue sales ($72,558) and order (4392) is July.
+The month with the lowest revenue sales ($64,028) and order (3883) is October.
 
 ## Tableau Visualization
 Pizza Sales Dashboard
