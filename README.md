@@ -43,11 +43,13 @@ Here are some questions that we'd like to be able to answer:
 
 •	What are the total sales, total number of orders and total number of customers?
 
-•	What is the monthly average sales?
+•	What is the sales revenue per month?
 
-•	What is the daily average sales?
+•	What is the sales revenue per day?
 
 •	What is the average customer per day? 
+
+•	What is the average number of pizzas per order? 
 
 •	Which pizzas generate the highest and lowest revenue?
 
