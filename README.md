@@ -116,7 +116,7 @@ Pizza Sales Dashboard
 
 ![image](https://github.com/mel4data/Pizza-Sales-Analysis/assets/170362474/9b249104-cb8f-47f4-a34f-acbb745355ce)
 
-## Recommendation
+## Recommendations
 •	Consider implementing a waitlist system and ensure adequate staff during peak hours to manage customer expectations and improve customer satisfaction.
 
 •	Menu Optimization – consider removing the XXL size for the Greek Pizza due to low demand and adding an XL size for the following due to high demand: The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The Hawaiian Pizza, The Pepperoni Pizza, The Thai Chicken Pizza, The California Chicken Pizza, and The Five Cheese Pizza
