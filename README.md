@@ -56,7 +56,109 @@ Here are some questions that we'd like to be able to answer:
 •	Monthly Sales and Order Trend
 
 ## SQL Queries
-Refer to the code tab
+Create View:
+CREATE VIEW Pizza_Sales AS
+SELECT order_details.order_details_id, 
+	order_details.order_id,
+	order_details.pizza_id,
+	order_details.quantity,
+	orders.date,
+	orders.time,
+	pizza_types.category,
+	pizza_types.ingredients,
+	pizza_types.name,
+	pizzas.size,
+	pizzas$.price
+FROM order_details
+LEFT JOIN orders
+	ON order_details.order_id = orders.order_id
+LEFT JOIN pizzas
+	ON order_details.pizza_id = pizzas.pizza_id
+LEFT JOIN pizza_types
+	ON pizzas.pizza_type_id = pizza_types.pizza_type_id
+
+Revenue:
+SELECT ROUND (SUM((quantity * price)), 0) AS Revenue
+FROM Pizza_Sales
+ 
+Order:
+SELECT ROUND (SUM(quantity), 0) AS TotalOrders
+FROM Pizza_Sales
+
+Customers:
+SELECT COUNT(DISTINCT(order_id)) AS TotalCustomers
+FROM Pizza_Sales
+
+Ave. Revenue per Month:
+SELECT ROUND (SUM(quantity*price)/COUNT(DISTINCT(Month(date))), 0) AS Ave_Monthly_Revenue
+FROM Pizza_Sales
+
+Ave. Revenue per Day:
+SELECT ROUND (SUM(quantity*price)/COUNT(DISTINCT(date)), 0) AS Ave_Daily_Revenue
+FROM Pizza_Sales
+
+Ave. Number of Customers per Day:
+SELECT ROUND(COUNT(DISTINCT(order_id))/COUNT(DISTINCT(date)), 0) AS Ave_CustperDay
+FROM Pizza_Sales
+
+Ave. Order Value:
+SELECT ROUND (SUM(quantity*price)/COUNT(DISTINCT(order_id)), 2) AS Ave_OderValue
+FROM Pizza_Sales
+ 
+
+Ave. Order:
+SELECT ROUND(SUM(quantity)/COUNT(DISTINCT(order_id)), 2) AS Ave_Order
+FROM Pizza_Sales
+
+Top Pizza Sales:
+SELECT TOP(5) ROUND (SUM((quantity * price)), 0) AS Revenue, name	
+FROM Pizza_Sales
+GROUP BY (name)
+ORDER BY (Revenue) DESC
+
+Bottom Pizza Sales:
+SELECT TOP(5) ROUND (SUM((quantity * price)), 0) AS Revenue, name	
+FROM Pizza_Sales
+GROUP BY (name)
+ORDER BY (Revenue)
+
+Top Ordered Pizza:
+SELECT TOP(5) ROUND (SUM(quantity), 0) AS TotalOrders, name
+FROM Pizza_Sales
+GROUP BY (name)
+ORDER BY (TotalOrders) DESC
+
+Bottom Ordered Pizza:
+SELECT TOP(5) ROUND (SUM(quantity), 0) AS TotalOrders, name
+FROM Pizza_Sales
+GROUP BY (name)
+ORDER BY (TotalOrders) DESC
+
+Monthly Order and Revenue:
+SELECT MONTH (date) AS Month_num,
+		DATENAME (MONTH, date) AS Month_Name,
+		ROUND (SUM(quantity), 0) AS TotalOrders, 
+		ROUND (SUM((quantity * price)), 0) AS Revenue
+FROM [Pizza_Sales]
+GROUP BY MONTH (date), DATENAME (MONTH, date)
+ORDER BY MONTH (date)
+
+Day with Highest Revenue:
+SELECT DATENAME(WEEKDAY, date) AS Week_Day,
+	ROUND (SUM(quantity), 0) AS TotalOrders, 
+	ROUND (SUM((quantity * price)), 0) AS Revenue
+FROM [Pizza_Sales]
+GROUP BY DATENAME(dw, date)
+ORDER BY Revenue DESC
+
+Hourly Order and Revenue:
+SELECT DATEPART(HOUR, time) AS Hour_Int,
+ROUND (SUM(quantity), 0) AS TotalOrders, 
+ROUND (SUM((quantity * price)), 0) AS Revenue
+FROM [Pizza_Sales]
+GROUP BY DATEPART(HOUR, time)
+ORDER BY DATEPART(HOUR, time)
+
 
 ## Answers to the Questions
 1.	What days and times do we tend to be busiest?
