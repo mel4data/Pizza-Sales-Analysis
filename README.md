@@ -117,4 +117,13 @@ Pizza Sales Dashboard
 ![image](https://github.com/mel4data/Pizza-Sales-Analysis/assets/170362474/9b249104-cb8f-47f4-a34f-acbb745355ce)
 
 ## Recommendation
+•	Consider implementing a waitlist system and ensure adequate staff during peak hours to manage customer expectations and improve customer satisfaction.
+
+•	Menu Optimization – consider removing the XXL size for the Greek Pizza due to low demand and adding an XL size for the following due to high demand: The Classic Deluxe Pizza, The Barbecue Chicken Pizza, The Hawaiian Pizza, The Pepperoni Pizza, The Thai Chicken Pizza, The California Chicken Pizza, and The Five Cheese Pizza
+
+•	Customer feedback data would help in menu optimization and enhancing customer satisfaction and experience.
+
+•	Promotions and Marketing:
+  Bundle Deals – combo meals can be implemented to encourage large orders and increase revenue.
+  Customer Demographics data help in improving marketing and promotions to attract new customers.
 
